@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-// import heroImage from "../assets/tech-team.jpg";
 
 const Hero = () => (
   <section
@@ -13,8 +12,6 @@ const Hero = () => (
     }}
     className="pt-20 relative flex items-center justify-center text-center"
   >
-    {/* Removed overlay div temporarily to check image visibility */}
-    {/* <div className="bg-black bg-opacity-50 w-full h-full absolute inset-0"></div> */}
     <div className="relative z-10 text-white px-6">
       <h1 className="text-4xl md:text-5xl font-bold">
         Affordable Tech Solutions for Businesses and Developers
