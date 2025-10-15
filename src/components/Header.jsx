@@ -21,11 +21,10 @@ const Header = () => {
       initial={{ y: -50, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        scrolled
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled
           ? "bg-white shadow-md text-gray-900"
           : "bg-transparent text-white"
-      }`}
+        }`}
     >
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
         {/* Logo */}
@@ -36,9 +35,8 @@ const Header = () => {
         >
           <Link
             to="/"
-            className={`text-2xl font-bold ${
-              scrolled ? "text-teal-700" : "text-teal-700"
-            }`}
+            className={`text-2xl font-bold ${scrolled ? "text-teal-700" : "text-teal-700"
+              }`}
           >
             DEVADU<span className="text-teal-600">.</span>
           </Link>
@@ -58,10 +56,9 @@ const Header = () => {
                 key={i}
                 to={path}
                 className={({ isActive }) =>
-                  `hover:text-teal-600 transition ${
-                    isActive
-                      ? "text-teal-600 font-semibold"
-                      : scrolled
+                  `hover:text-teal-600 transition ${isActive
+                    ? "text-teal-600 font-semibold"
+                    : scrolled
                       ? "text-gray-800"
                       : "text-gray-800"
                   }`
@@ -92,9 +89,8 @@ const Header = () => {
           initial={{ height: 0, opacity: 0 }}
           animate={{ height: "auto", opacity: 1 }}
           transition={{ duration: 0.3 }}
-          className={`md:hidden bg-white shadow-lg flex flex-col items-center py-6 space-y-4 transition-all duration-300 ${
-            scrolled ? "text-gray-900" : "text-gray-800"
-          }`}
+          className={`md:hidden bg-white shadow-lg flex flex-col items-center py-6 space-y-4 transition-all duration-300 ${scrolled ? "text-gray-900" : "text-gray-800"
+            }`}
         >
           <NavLink
             to="/"
